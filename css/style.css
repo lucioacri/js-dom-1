@@ -4,3 +4,19 @@
 #yellow-lamp {
   max-width: 300px;
 }
+
+.lamp .lamp-on {
+  display: none;
+}
+
+.lamp .lamp-off {
+  display: block;
+}
+
+.lamp.on .lamp-on {
+  display: block;
+}
+
+.lamp.on .lamp-off {
+  display: none;
+}
