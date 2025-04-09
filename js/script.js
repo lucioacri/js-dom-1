@@ -2,9 +2,16 @@ const myWhiteLamp = document.getElementById("white-lamp");
 const myYellowLamp = document.getElementById("yellow-lamp");
 const clickButton = document.getElementById("my-button");
 
-console.log(myWhiteLamp);
-console.log(myYellowLamp);
-console.log(clickButton);
+// console.log(myWhiteLamp);
+// console.log(myYellowLamp);
+// console.log(clickButton);
+
+clickButton.addEventListener("click", function () {
+  document.getElementById("lamp").classList.toggle("on");
+  clickButton.innerText === "Accenditi"
+    ? (clickButton.innerText = "Spegniti")
+    : (clickButton.innerText = "Accenditi");
+});
 
 // clickButton.addEventListener("click", function () {
 //   const yellowHidden = myYellowLamp.classList.contains("d-none");
@@ -18,10 +25,3 @@ console.log(clickButton);
 //     clickButton.innerText = "Accenditi";
 //   }
 // });
-
-clickButton.addEventListener("click", function () {
-  document.getElementById("lamp").classList.toggle("on");
-  if (clickButton.innerText === "Accenditi") {
-    clickButton.innerText = "Spegniti";
-  } else clickButton.innerText = "Accenditi";
-});
